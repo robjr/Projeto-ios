@@ -35,7 +35,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Login" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aOL-0I-Ujq">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Senha" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aOL-0I-Ujq">
                                 <rect key="frame" x="40" y="460" width="240" height="30"/>
                                 <color key="textColor" red="0.62356839009999998" green="0.6119284344" blue="0.61422065579999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -118,7 +118,7 @@
         <!--Title-->
         <scene sceneID="dNu-ZC-B0s">
             <objects>
-                <viewController id="fXh-uX-6qF" sceneMemberID="viewController">
+                <viewController id="fXh-uX-6qF" customClass="CadDonoViewController" customModule="Coredata_PetHost_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qbu-yo-bmM"/>
                         <viewControllerLayoutGuide type="bottom" id="i55-8b-NH4"/>
@@ -139,18 +139,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cadastro3.png" translatesAutoresizingMaskIntoConstraints="NO" id="il0-Jj-gsw">
                                 <rect key="frame" x="40" y="185" width="240" height="128"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nome" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CdU-Qm-03u">
-                                <rect key="frame" x="40" y="372" width="240" height="30"/>
-                                <color key="textColor" red="0.52961387434554974" green="0.52961387434554974" blue="0.52961387434554974" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OZ9-Nm-nWU">
-                                <rect key="frame" x="40" y="417" width="240" height="30"/>
-                                <color key="textColor" red="0.52961387429999995" green="0.52961387429999995" blue="0.52961387429999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Senha" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Zc-vf-loA">
                                 <rect key="frame" x="40" y="462" width="240" height="30"/>
                                 <color key="textColor" red="0.52961387429999995" green="0.52961387429999995" blue="0.52961387429999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -163,26 +151,47 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nome" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CdU-Qm-03u">
+                                <rect key="frame" x="40" y="368" width="240" height="30"/>
+                                <color key="textColor" red="0.52961387434554974" green="0.52961387434554974" blue="0.52961387434554974" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="SaveAnfitriao:" destination="fXh-uX-6qF" eventType="editingDidEnd" id="uEq-lz-U5D"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OZ9-Nm-nWU">
+                                <rect key="frame" x="40" y="413" width="240" height="30"/>
+                                <color key="textColor" red="0.52961387429999995" green="0.52961387429999995" blue="0.52961387429999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="0TI-jK-qJE">
                         <barButtonItem key="rightBarButtonItem" title="Salvar" id="xLK-cn-PEc">
                             <connections>
-                                <segue destination="NHa-9i-XTN" kind="show" id="0pR-7g-dJo"/>
+                                <action selector="SaveDono:" destination="fXh-uX-6qF" id="n1H-oV-qZc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="lbConfSenha" destination="x03-kh-Nhl" id="ssY-Re-o5g"/>
+                        <outlet property="lbEmail" destination="OZ9-Nm-nWU" id="7Wl-Dl-QJu"/>
+                        <outlet property="lbNome" destination="CdU-Qm-03u" id="blL-pd-L3b"/>
+                        <outlet property="lbSenha" destination="0Zc-vf-loA" id="DJh-MR-RRZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ekd-5b-G5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1506" y="654"/>
         </scene>
-        <!--View Controller-->
+        <!--Dono View Controller-->
         <scene sceneID="IUx-Kz-JnK">
             <objects>
-                <viewController id="NHa-9i-XTN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BVdono" id="NHa-9i-XTN" customClass="DonoViewController" customModule="Coredata_PetHost_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jr4-kA-WLP"/>
                         <viewControllerLayoutGuide type="bottom" id="TyE-ho-Tfc"/>
@@ -350,7 +359,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celula" id="DGH-ak-Rs7">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DGH-ak-Rs7" id="Xeq-JH-lMR">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>

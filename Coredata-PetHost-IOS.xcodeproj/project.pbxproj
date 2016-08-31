@@ -10,6 +10,8 @@
 		84214A5A1D760B430015A21D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84214A581D760B430015A21D /* Main.storyboard */; };
 		84214A5C1D760D4F0015A21D /* AnfitriaoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84214A5B1D760D4F0015A21D /* AnfitriaoController.swift */; };
 		84214A5E1D76121B0015A21D /* ListarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84214A5D1D76121B0015A21D /* ListarTableViewController.swift */; };
+		8434D8BE1D7742FD00430DC9 /* CadDonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434D8BD1D7742FD00430DC9 /* CadDonoViewController.swift */; };
+		8434D8C01D77489700430DC9 /* DonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434D8BF1D77489700430DC9 /* DonoViewController.swift */; };
 		84C096A71D7357DE00859DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C096A61D7357DE00859DB0 /* AppDelegate.swift */; };
 		84C096A91D7357DE00859DB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C096A81D7357DE00859DB0 /* ViewController.swift */; };
 		84C096AF1D7357DE00859DB0 /* Coredata_PetHost_IOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84C096AD1D7357DE00859DB0 /* Coredata_PetHost_IOS.xcdatamodeld */; };
@@ -47,6 +49,8 @@
 		84214A591D760B430015A21D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84214A5B1D760D4F0015A21D /* AnfitriaoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnfitriaoController.swift; sourceTree = "<group>"; };
 		84214A5D1D76121B0015A21D /* ListarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListarTableViewController.swift; sourceTree = "<group>"; };
+		8434D8BD1D7742FD00430DC9 /* CadDonoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadDonoViewController.swift; sourceTree = "<group>"; };
+		8434D8BF1D77489700430DC9 /* DonoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonoViewController.swift; sourceTree = "<group>"; };
 		84C096A31D7357DE00859DB0 /* Coredata-PetHost-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coredata-PetHost-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C096A61D7357DE00859DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C096A81D7357DE00859DB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,7 +169,9 @@
 			children = (
 				84C096A81D7357DE00859DB0 /* ViewController.swift */,
 				84C096F11D73A63A00859DB0 /* CadAnfitriaoViewController.swift */,
+				8434D8BD1D7742FD00430DC9 /* CadDonoViewController.swift */,
 				84214A5B1D760D4F0015A21D /* AnfitriaoController.swift */,
+				8434D8BF1D77489700430DC9 /* DonoViewController.swift */,
 				84214A5D1D76121B0015A21D /* ListarTableViewController.swift */,
 			);
 			name = controller;
@@ -326,10 +332,12 @@
 			files = (
 				84C096AF1D7357DE00859DB0 /* Coredata_PetHost_IOS.xcdatamodeld in Sources */,
 				84C096A91D7357DE00859DB0 /* ViewController.swift in Sources */,
+				8434D8C01D77489700430DC9 /* DonoViewController.swift in Sources */,
 				84214A5E1D76121B0015A21D /* ListarTableViewController.swift in Sources */,
 				84C096F21D73A63A00859DB0 /* CadAnfitriaoViewController.swift in Sources */,
 				84C096A71D7357DE00859DB0 /* AppDelegate.swift in Sources */,
 				84214A5C1D760D4F0015A21D /* AnfitriaoController.swift in Sources */,
+				8434D8BE1D7742FD00430DC9 /* CadDonoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

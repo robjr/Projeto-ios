@@ -17,7 +17,7 @@ class ListarTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "hehe"
+        title = "Lista de Anfitrioes"
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "celula")
     }
 

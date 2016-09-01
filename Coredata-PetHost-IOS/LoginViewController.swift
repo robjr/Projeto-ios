@@ -76,6 +76,10 @@ class LoginViewController: UIViewController {
                 }
             }
             
+            let alerta = UIAlertController(title: "Atencao", message: "Email ou senha estao incorretos", preferredStyle: UIAlertControllerStyle.Alert)
+            alerta.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alerta, animated:true, completion: nil)
+            
         } catch {
             let fetchError = error as NSError
             print(fetchError)

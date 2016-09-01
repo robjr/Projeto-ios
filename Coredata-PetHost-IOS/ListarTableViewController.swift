@@ -53,11 +53,8 @@ class ListarTableViewController: UITableViewController {
         
         print("Entrou no view will")
         do {
-            print("Entrou no view will1")
             let results = try managedContext.executeFetchRequest(fetchRequest)
-            print("Entrou no view will2")
             anfitriao = results as! [NSManagedObject]
-            print("Entrou no view will3")
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
         }

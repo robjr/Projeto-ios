@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F8900FACFF9BC290D6A9C90862A09C715BAEAF9F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F8900FACFF9BC290D6A9C90862A09C715BAEAF9F" : 0,
+    "D033F31148A22CEFD4823FD090936004CB48B56E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "97FDC6D5-5BEC-4E5D-B4D4-B88F2D66431D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F8900FACFF9BC290D6A9C90862A09C715BAEAF9F" : "Projeto-ios\/",
+    "D033F31148A22CEFD4823FD090936004CB48B56E" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Coredata-PetHost-IOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Coredata-PetHost-IOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xinton\/PPS-Chain-Of-Responsability.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D033F31148A22CEFD4823FD090936004CB48B56E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mayermatheus\/Projeto-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F8900FACFF9BC290D6A9C90862A09C715BAEAF9F"
+    }
+  ]
+}

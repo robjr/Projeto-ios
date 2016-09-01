@@ -20,7 +20,6 @@ class CadDonoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -34,8 +33,6 @@ class CadDonoViewController: UIViewController {
         let email = self.lbEmail.text
         let senha = self.lbSenha.text
         //let confsenha = self.lbConfSenha.text
-        
-        print("Entrou no metodo SaveDono")
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         

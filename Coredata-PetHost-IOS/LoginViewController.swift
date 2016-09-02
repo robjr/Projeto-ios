@@ -30,6 +30,7 @@ class LoginViewController: UIViewController {
         lbemail = self.lbEmail.text
         let lbsenha : String!
         lbsenha = self.lbSenha.text
+        var telAlert = true
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
@@ -59,6 +60,7 @@ class LoginViewController: UIViewController {
                     if (emaildono == lbemail && senhadono == lbsenha){
                         let TelaDono  = self.storyboard!.instantiateViewControllerWithIdentifier("BVdono") as! DonoViewController
                         self.navigationController?.pushViewController(TelaDono, animated: true)
+                        telAlert = false
                         break
                     }
                 }
@@ -71,15 +73,17 @@ class LoginViewController: UIViewController {
                         print("cade")
                         let TelaAnfitriao  = self.storyboard!.instantiateViewControllerWithIdentifier("BVanfitriao") as! AnfitriaoController
                         self.navigationController?.pushViewController(TelaAnfitriao, animated: true)
+                        telAlert = false
                         break
                     }
                 }
             }
             
-            let alerta = UIAlertController(title: "Atencao", message: "Email ou senha estao incorretos", preferredStyle: UIAlertControllerStyle.Alert)
-            alerta.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alerta, animated:true, completion: nil)
-            
+            if telAlert{
+                let alerta = UIAlertController(title: "Atencao", message: "Email ou senha estao incorretos", preferredStyle: UIAlertControllerStyle.Alert)
+                alerta.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alerta, animated:true, completion: nil)
+            }
         } catch {
             let fetchError = error as NSError
             print(fetchError)

@@ -163,9 +163,6 @@
                                 <color key="textColor" red="0.52961387434554974" green="0.52961387434554974" blue="0.52961387434554974" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="SaveAnfitriao:" destination="fXh-uX-6qF" eventType="editingDidEnd" id="uEq-lz-U5D"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OZ9-Nm-nWU">
                                 <rect key="frame" x="40" y="413" width="240" height="30"/>
@@ -186,7 +183,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="lbConfSenha" destination="x03-kh-Nhl" id="ssY-Re-o5g"/>
-                        <outlet property="lbEmail" destination="OZ9-Nm-nWU" id="7Wl-Dl-QJu"/>
+                        <outlet property="lbEmail" destination="OZ9-Nm-nWU" id="AfZ-ot-zbI"/>
                         <outlet property="lbNome" destination="CdU-Qm-03u" id="blL-pd-L3b"/>
                         <outlet property="lbSenha" destination="0Zc-vf-loA" id="DJh-MR-RRZ"/>
                     </connections>
